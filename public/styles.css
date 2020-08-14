@@ -1,0 +1,31 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto 500px auto;
+}
+
+#image_header {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+#desc_map_rules {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  overflow: hidden;
+}
+
+#image_grid {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+}
+
+#availability {
+  grid-column: 1 / 2;
+  grid-row: 4 / 5;
+}
+
+#reviews {
+  grid-column: 1 / 2;
+  grid-row: 5 / 6;
+}
