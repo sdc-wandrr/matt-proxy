@@ -3,17 +3,21 @@ const path = require('path');
 const app = express();
 const PORT = 3030;
 
-const imagesServer = require('../client/imageCarousel/server/index.js');
-const reviewsServer = require('../client/Reviews-Service/server/index.js');
-const descMapRulesServer = require('../client/description-map-rules-service/server/index.js');
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  next();
+});
 
 app.use('/hostels/:hostel_id', express.static(path.join(__dirname, '../public')));
 
 // app.get('/api/hostels/:hostel_id/images', (req, res) => {
 
 // });
-// app.get();
-// app.get();
+// app.get('/house/:id', (req, res) => {
+//   res.redirect('http://localhost:3000/house/:id')
+// });
+
+// app.get('/public/bundle.js');
 // app.get();
 // app.get();
 // app.get();
