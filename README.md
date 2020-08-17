@@ -1,14 +1,13 @@
 # Project Name
 
-> Project description
+> Hostile World
 
 ## Related Projects
 
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-
+  - https://github.com/hrr47-karev/Reviews-Service
+  - https://github.com/hrr47-karev/description-map-rules-service
+  - https://github.com/hrr47-karev/AvailabilityComponent
+  - https://github.com/hrr47-karev/imageCarousel
 ## Table of Contents
 
 1. [Usage](#Usage)
