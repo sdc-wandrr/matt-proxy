@@ -16,7 +16,7 @@ body {
   background-color: blue;
 }
 
-#images_header {
+section #images_header {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
   display: flex;
@@ -25,7 +25,7 @@ body {
   justify-content: center;
 }
 
-#desc_map_rules {
+section #desc_map_rules {
   grid-column: 1 / 2;
   grid-row: 2 / 3;
   overflow: hidden;
@@ -35,7 +35,7 @@ body {
   justify-content: center;
 }
 
-#image_grid {
+section #image_grid {
   grid-column: 1 / 2;
   grid-row: 3 / 4;
   display: flex;
@@ -44,7 +44,7 @@ body {
   justify-content: center;
 }
 
-#availability {
+section #availability {
   grid-column: 1 / 2;
   grid-row: 4 / 5;
   display: flex;
@@ -53,7 +53,7 @@ body {
   justify-content: center;
 }
 
-#reviews {
+section #reviews {
   grid-column: 1 / 2;
   grid-row: 5 / 6;
   display: flex;
