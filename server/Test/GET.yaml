@@ -1,0 +1,28 @@
+config:
+  target: "http://localhost:3030/hostels"
+  http:
+    pool: 1000
+  phases:
+    - duration: 30
+      arrivalRate: 1
+      name: Warm Up Phase | 1 RPS
+    - duration: 30
+      arrivalRate: 10
+      name: Ramp Up Phase (1/4) | 10 RPS
+    - duration: 30
+      arrivalRate: 100
+      name: Ramp Up Phase (2/4) | 100 RPS
+    - duration: 30
+      arrivalRate: 200
+      name: Ramp Up Phase (3/4) | 200 RPS
+    - duration: 60
+      arrivalRate: 400
+      name: Ramp Up Phase (4/4) | 400 RPS
+    - duration: 120
+      arrivalRate: 1000
+      name: Maximum Load | 1000 RPS
+scenarios:
+  - name: "Get Hostel images"
+    flow:
+      - get:
+          url: "/{$randomNumber(1,10000000)}"

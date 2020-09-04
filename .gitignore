@@ -23,5 +23,7 @@ coverage
 # Compiled Dirs (http://nodejs.org/api/addons.html)
 build/
 dist/
-publid/bundle.js
+public/bundle.js
 
+# New Relic Keys
+newrelic.js
