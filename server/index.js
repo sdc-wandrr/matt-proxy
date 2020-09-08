@@ -14,7 +14,7 @@ app.use('/hostels/:hostel_id', express.static(path.join(__dirname, '../public'))
 // API reroutes
 
 // Image carousel service
-app.use('/api/hostels/:hostel_id/images', createProxyMiddleware({ target: 'http://localhost:3007', changeOrigin: true }));
+app.use('/api/hostels/:hostel_id/images', createProxyMiddleware({ target: 'http://54.67.30.110:3007', changeOrigin: true }));
 // availability service
 app.use('/api/hostel/:hostelId/rooms', createProxyMiddleware({ target: 'http://localhost:3009', changeOrigin: true }));
 // description map rules service
