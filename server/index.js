@@ -18,7 +18,7 @@ app.get('/loaderio-12556c443590d1d7ab0e96b850dcc72a/', (req, res) => {
 // API reroutes
 
 // Image carousel service
-app.use('/api/hostels/:hostel_id/images', createProxyMiddleware({ target: 'http://54.215.240.235', changeOrigin: true }));
+app.use('/api/hostels/:hostel_id/images', createProxyMiddleware({ target: 'http://172.31.30.142', changeOrigin: true }));
 // availability service
 app.use('/api/hostel/:hostelId/rooms', createProxyMiddleware({ target: 'http://localhost:3009', changeOrigin: true }));
 // description map rules service
