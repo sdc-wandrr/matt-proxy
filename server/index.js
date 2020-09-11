@@ -27,7 +27,7 @@ app.use('/house/:id/description', createProxyMiddleware({ target: 'http://54.215
 app.use('/house/:id/rules', createProxyMiddleware({ target: 'http://54.215.89.194', changeOrigin: true }));
 app.use('/house/:id/address', createProxyMiddleware({ target: 'http://54.215.89.194', changeOrigin: true }));
 // reviews service
-app.use('/api/reviews', createProxyMiddleware({ target: '100.26.204.252', changeOrigin: true }));
+app.use('/hostels/:id/api/reviews', createProxyMiddleware({ target: '100.26.204.252', changeOrigin: true }));
 
 
 app.listen(PORT, () => console.log('Proxy Server listening on port ', PORT));
