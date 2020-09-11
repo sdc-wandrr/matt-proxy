@@ -22,10 +22,10 @@ app.use('/api/hostels/:hostel_id/images', createProxyMiddleware({ target: 'http:
 // availability service
 app.use('/api/hostel/:hostelId/rooms', createProxyMiddleware({ target: 'http://54.215.89.194', changeOrigin: true }));
 // description map rules service
-app.use('/house/:id/hostel', createProxyMiddleware({ target: 'http://localhost:3000', changeOrigin: true }));
-app.use('/house/:id/description', createProxyMiddleware({ target: 'http://localhost:3000', changeOrigin: true }));
-app.use('/house/:id/rules', createProxyMiddleware({ target: 'http://localhost:3000', changeOrigin: true }));
-app.use('/house/:id/address', createProxyMiddleware({ target: 'http://localhost:3000', changeOrigin: true }));
+app.use('/house/:id/hostel', createProxyMiddleware({ target: 'http://54.215.89.194', changeOrigin: true }));
+app.use('/house/:id/description', createProxyMiddleware({ target: 'http://54.215.89.194', changeOrigin: true }));
+app.use('/house/:id/rules', createProxyMiddleware({ target: 'http://54.215.89.194', changeOrigin: true }));
+app.use('/house/:id/address', createProxyMiddleware({ target: 'http://54.215.89.194', changeOrigin: true }));
 // reviews service
 app.use('/api/reviews', createProxyMiddleware({ target: '100.26.204.252:3001', changeOrigin: true }));
 
